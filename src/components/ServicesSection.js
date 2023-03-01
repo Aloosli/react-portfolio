@@ -8,7 +8,7 @@ const ServicesSection = () => {
     return(
         <div className="services">
             <div className="description">
-                <h2>Unleashing<span>creative</span> potential</h2>
+                <h2>Unleashing<span> creative</span> potential</h2>
                 <div className="cards">
                     <div className="card">
                         <div className="icon">
