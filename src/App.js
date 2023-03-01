@@ -1,10 +1,14 @@
+// This is the main component of the app
 
+// import Pages
+
+import AboutMe from "./pages/AboutMe";
 
 
 function App() {
   return (
     <div className="App">
-      <h1>Portfolio</h1>
+      <AboutMe />
     </div>
   );
 }
