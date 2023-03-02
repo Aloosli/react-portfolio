@@ -1,6 +1,5 @@
 import avatar from "../img/avatar.png";
-// Styled Components
-import styled from "styled-components";
+import { About, Description, Image, Hide } from "../styles";
 
 const AboutSection = () => {
   return (
@@ -32,46 +31,6 @@ const AboutSection = () => {
 };
 
 // Styled Components
-const About = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 2rem 5rem;
-  color: white;
-`;
-const Description = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 1rem;
 
-  .coding {
-    color: #e9c46a;
-  }
-  .design {
-    color: #e76f51;
-  }
-`;
-
-const Image = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  overflow: hidden;
-  img {
-    width: 90%;
-    object-fit  : cover;
-    overflow: hidden;
-  }
-`;
-const Hide = styled.div`
-    overflow: hidden;
-`
 
 export default AboutSection;

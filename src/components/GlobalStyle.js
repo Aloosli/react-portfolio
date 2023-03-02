@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
         background: #264653;
+        font-family: 'Gabriela', serif;
     }
     button {
         font-weight: bold;
