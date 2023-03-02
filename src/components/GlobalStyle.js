@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
     }
     h2 {
         font-weight: lighter;
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     h3 {
         color: white;
@@ -42,29 +42,13 @@ const GlobalStyle = createGlobalStyle`
         
     }
     a {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     p{
-        padding: 3rem 0rem;
+        padding: 2.5rem 0rem;
         color: #ccc;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 150%;
-    }
-    // Styles for screens greater or equal to 500px wide
-  @media screen and (min-width: 500px) {
-  h2 {
-        font-size: 3rem; 
-  }
-  p {
-    font-size: 1.8rem;
-    padding: 3rem 0rem;
-    line-height: 130%;
-    }
-  button {
-    font-size: 1.4rem;
-    
-  }
-    }
-    `;
+    }`;
 
 export default GlobalStyle;
