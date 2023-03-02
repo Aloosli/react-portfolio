@@ -30,6 +30,6 @@ const AboutSection = () => {
   );
 };
 
-// Styled Components
+
 
 export default AboutSection;
