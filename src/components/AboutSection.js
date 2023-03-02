@@ -1,5 +1,5 @@
 import avatar from "../img/avatar.png";
-import { About, Description, Image, Hide } from "../styles";
+import { About, Description, Image, Hide } from "../Styles";
 
 const AboutSection = () => {
   return (
@@ -31,6 +31,5 @@ const AboutSection = () => {
 };
 
 // Styled Components
-
 
 export default AboutSection;

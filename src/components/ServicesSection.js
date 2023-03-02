@@ -7,7 +7,7 @@ import innovative from "../icons/innovative.svg";
 
 // import styles
 import styled from "styled-components";
-import { About, Description,} from "../styles";
+import { About, Description } from "../Styles";
 
 const ServicesSection = () => {
   return (
@@ -71,7 +71,7 @@ const Card = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     h3 {
       font-size: 1.5rem;
       margin-left: 1rem;

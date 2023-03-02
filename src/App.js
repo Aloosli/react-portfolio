@@ -5,7 +5,7 @@ import GlobalStyle from "./components/GlobalStyle";
 import AboutMe from "./pages/AboutMe";
 import ContactMe from "./pages/ContactMe";
 import MyWork from "./pages/MyWork";
-import Nav from "./components/nav";
+import Nav from "./components/Nav";
 // Router
 import { Routes, Route } from "react-router-dom";
 
