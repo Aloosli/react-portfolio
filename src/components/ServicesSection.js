@@ -4,10 +4,10 @@
 import clock from "../icons/clock.svg";
 import coins from "../icons/coins.svg";
 import innovative from "../icons/innovative.svg";
-import responsive from "../icons/responsive.svg";
+
 // import styles
 import styled from "styled-components";
-import { About, Description, Image } from "../styles";
+import { About, Description,} from "../styles";
 
 const ServicesSection = () => {
   return (
