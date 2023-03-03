@@ -26,17 +26,15 @@ const AboutSection = () => {
               and<span className="design"> design.</span>
             </motion.h2>
           </Hide>
-          
         </motion.div>
         <motion.p variants={fade}>
-            Contact me for any project ideas you have.
-          </motion.p>
-          <motion.button variants={fade}>Contact Me</motion.button>
-          <Image>
-        <motion.img variants={photoAnim}src={avatar} alt="avatar" />
-      </Image>
+          Contact me for any project ideas you have.
+        </motion.p>
+        <motion.button variants={fade}>Contact Me</motion.button>
+        <Image>
+          <motion.img variants={photoAnim} src={avatar} alt="avatar" />
+        </Image>
       </Description>
-      
     </About>
   );
 };

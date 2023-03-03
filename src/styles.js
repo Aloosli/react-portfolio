@@ -1,8 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const About = styled.div`
   min-height: 100vh;
   display: flex;
+
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -10,8 +11,8 @@ export const About = styled.div`
   color: white;
 `;
 export const Description = styled.div`
-  
   display: flex;
+
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -29,17 +30,14 @@ export const Description = styled.div`
 export const Image = styled.div`
   display: flex;
   width: 70%;
-  
-  
-  
-  
+
   img {
     width: 100%;
-    object-fit  : cover;
+    object-fit: cover;
     margin-top: 2rem;
     overflow: hidden;
   }
 `;
 export const Hide = styled.div`
-    overflow: hidden;
-`
+  overflow: hidden;
+`;

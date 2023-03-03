@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 const Project = ({ title, deployedLink, githubLink, screenshot }) => {
     return (
       <ProjectWrapper>
