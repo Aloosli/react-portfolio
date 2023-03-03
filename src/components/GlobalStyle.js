@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
         border-radius: 40px;
         border: 3px solid #e76f51;
         background: transparent;
-        color: #e9c46a;
+        
         transition: all 0.5s ease;
         &:hover {
             background-color: #f4a261;
@@ -30,8 +30,10 @@ const GlobalStyle = createGlobalStyle`
     h2 {
         font-weight: lighter;
         font-size: 1.7rem;
+        
     }
     h3 {
+        font-family: "montserrat", sans-serif;
         color: white;
     }
     h4 {
@@ -43,9 +45,12 @@ const GlobalStyle = createGlobalStyle`
         
     }
     a {
+        color: #e9c46a;
+        text-decoration: none;
         font-size: 1.2rem;
     }
     p{
+        font-family: "Montserrat", sans-serif;
         padding: 1.5rem 0rem;
         color: #ccc;
         font-size: 1.2rem;

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import avatar from "../img/avatar.png";
 import { About, Description, Image, Hide } from "../Styles";
 // Framer Motion
@@ -30,7 +31,9 @@ const AboutSection = () => {
         <motion.p variants={fade}>
           Contact me for any project ideas you have.
         </motion.p>
-        <motion.button variants={fade}>Contact Me</motion.button>
+        <motion.button variants={fade}>
+          <Link to="/ContactMe" className="btn-contact">Contact Me</Link>
+        </motion.button>
         <Image>
           <motion.img variants={photoAnim} src={avatar} alt="avatar" />
         </Image>

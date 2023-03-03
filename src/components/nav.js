@@ -42,6 +42,7 @@ const StyledNav = styled.nav`
     list-style: none;
   }
   li {
+    font-family: "Montserrat", sans-serif;
     padding-left: 2rem;
     position: relative;
   }

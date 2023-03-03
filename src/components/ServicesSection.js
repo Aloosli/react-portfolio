@@ -24,21 +24,21 @@ const ServicesSection = () => {
           <Card>
             <div className="icon">
               <img src={clock} alt="clock-icon" />
-              <h3>Efficient</h3>
+              <h2>Efficient</h2>
             </div>
             <p>I work quickly and efficient to get the job done on time and to a high standard.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={coins} alt="coins-icon" />
-              <h3>Affordable</h3>
+              <h2>Affordable</h2>
             </div>
             <p> Competitive pricing ensures my services are accessible and affordable for everyone.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={innovative} alt="lightbulb-icon" />
-              <h3>Innovative</h3>
+              <h2>Innovative</h2>
             </div>
             <p>The latest technologies and trends are incorporated into my solutions to bring creativity and innovation to your project.</p>
           </Card>
@@ -73,7 +73,8 @@ const Card = styled.div`
   flex-basis: 20rem;
   display: flex;
   flex-direction: column;
-  h3 {
+  justify-content: space-between;
+  h2 {
       font-size: 1.5rem;
       margin-left: 1rem;
       color: #e76f51;

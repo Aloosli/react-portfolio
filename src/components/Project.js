@@ -30,6 +30,7 @@ const Project = ({ title, deployedLink, githubLink, screenshot }) => {
     a {
         color: #e76f51;
         text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
     }
   `;
