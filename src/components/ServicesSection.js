@@ -9,7 +9,11 @@ import innovative from "../icons/innovative.svg";
 import styled from "styled-components";
 import { About, Description } from "../Styles";
 
+
+
+
 const ServicesSection = () => {
+  
   return (
     <Services>
       <Description>
@@ -22,21 +26,21 @@ const ServicesSection = () => {
               <img src={clock} alt="clock-icon" />
               <h3>Efficient</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>I work quickly and efficient to get the job done on time and to a high standard.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={coins} alt="coins-icon" />
               <h3>Affordable</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p> Competitive pricing ensures my services are accessible and affordable for everyone.</p>
           </Card>
           <Card>
             <div className="icon">
               <img src={innovative} alt="lightbulb-icon" />
               <h3>Innovative</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>The latest technologies and trends are incorporated into my solutions to bring creativity and innovation to your project.</p>
           </Card>
         </Cards>
       </Description>
@@ -67,17 +71,20 @@ const Cards = styled.div`
 `;
 const Card = styled.div`
   flex-basis: 20rem;
-  .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    h3 {
+  display: flex;
+  flex-direction: column;
+  h3 {
       font-size: 1.5rem;
       margin-left: 1rem;
       color: #e76f51;
       padding: 0.5rem;
     }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    
   }
 `;
 

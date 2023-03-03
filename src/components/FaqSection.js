@@ -4,6 +4,7 @@ import Toggle from "./Toggle";
 import { LayoutGroup } from "framer-motion";
 
 
+
 const FaqSection = () => {
   return (
     <Faq>
