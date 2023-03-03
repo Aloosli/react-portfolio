@@ -13,12 +13,12 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Gabriela', serif;
     }
     button {
-        font-weight: bold;
-        font-size: 1.1rem;
+        font-weight: lighter;
+        font-size: 1rem;
         cursor: pointer;
-        padding: 1rem 2rem;
+        padding: 0.75rem 1rem;
         border-radius: 40px;
-        border: 5px solid #e76f51;
+        border: 3px solid #e76f51;
         background: transparent;
         color: #e9c46a;
         transition: all 0.5s ease;
@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
     }
     h2 {
         font-weight: lighter;
-        font-size: 2.4rem;
+        font-size: 1.7rem;
     }
     h3 {
         color: white;
@@ -46,10 +46,11 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.2rem;
     }
     p{
-        padding: 2.5rem 0rem;
+        padding: 1.5rem 0rem;
         color: #ccc;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         line-height: 150%;
+        
     }`;
 
 export default GlobalStyle;

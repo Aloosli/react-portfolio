@@ -5,15 +5,15 @@ export const About = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 2rem 5rem;
+  justify-content: space-between;
+  padding: 2rem 3rem;
   color: white;
 `;
 export const Description = styled.div`
-  flex: 1;
+  
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   margin-bottom: 1rem;
@@ -28,13 +28,15 @@ export const Description = styled.div`
 
 export const Image = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  overflow: hidden;
+  width: 70%;
+  
+  
+  
+  
   img {
     width: 100%;
     object-fit  : cover;
+    margin-top: 2rem;
     overflow: hidden;
   }
 `;

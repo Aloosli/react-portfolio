@@ -31,9 +31,9 @@ const StyledNav = styled.nav`
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.7rem;
   a {
-    
+    font-size: 1.3rem;
     color: #e76f51;
     text-decoration: none;
   }
@@ -48,6 +48,6 @@ const StyledNav = styled.nav`
   #logo img {
     width: 50%;
   }
-  border-bottom: 4px solid #e9c46a;
+  border-bottom: 4px solid #4c88a7;
 `;
 export default Nav;

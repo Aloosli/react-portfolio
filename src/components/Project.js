@@ -1,47 +1,51 @@
 import styled from "styled-components";
 
 const Project = ({ title, deployedLink, githubLink, screenshot }) => {
-  return (
-    <ProjectWrapper>
-      <h2>{title}</h2>
-      <ProjectScreenshot src={screenshot} alt="screenshot" height={300} width={400} />
-      <a href={deployedLink}>Link to deployed version</a>
-      <a href={githubLink}>Link to GitHub repository</a>
-      
-    </ProjectWrapper>
-  );
-};
-
-const ProjectWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  h2 {
-    font-size: 1.9rem;
-    color: #e9c46a;
-    padding-bottom: 0.5rem;
-    margin-top: 1rem;
-    }
-  img {
-    width: 40%;
-    height: 40%;
-    border-radius: 10rem;
+    return (
+      <ProjectWrapper>
+        <h2>{title}</h2>
+        <ProjectScreenshot src={screenshot} alt="screenshot" height={300} width={400} />
+        
+        <LinksWrapper>
+          <a href={deployedLink}>Deployment</a>
+          <a href={githubLink}>GitHub</a>
+        </LinksWrapper>
+      </ProjectWrapper>
+    );
+  };
+  
+  const ProjectWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 2rem;
+      color: #e9c46a;
+      padding-bottom: 0.5rem;
+      margin-top: 4rem;
+      margin-bottom: 1rem;
     }
     a {
-        text-decoration: none;
         color: #e76f51;
-        font-family: 'Montserrat', sans-serif;
-        margin-bottom: 1rem;
+        text-decoration: none;
+        font-size: 1.5rem;
     }
-    
-`;
-
-const ProjectScreenshot = styled.img`
-  height: ${props => `${props.height}px`};
-  width: ${props => `${props.width}px`};
-`;
-
-export default Project;
+  `;
+  
+  const ProjectScreenshot = styled.img`
+    object-fit: contain;
+    max-width: 60%;
+    max-height: 60%;
+    `;
+  
+  const LinksWrapper = styled.div`
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  `;
+  
+  export default Project;
+  
 
 

@@ -1,12 +1,15 @@
 import ProjectData from "../data/ProjectData";
 import Project from "../components/Project";
-
+// import images
 import todayLearned from '../img/today-learned.png';
 import todoList from '../img/todolist.png';
 import weatherDashboard from '../img/weather_dashboard.png';
 import pwdGen from '../img/pwdgen.png';
 import beatMaker from '../img/beatmaker.png';
 import elenaPortfolio from '../img/elena.png';
+// Animation
+import { motion } from "framer-motion";
+import { pageAnimations } from "../animations";
 
 const MyWork = () => {
   const screenshots = {
@@ -19,7 +22,7 @@ const MyWork = () => {
   };
 
   return (
-    <div>
+    <motion.div exit="exit" variants={pageAnimations} initial="hidden" animate="show">
       
       {ProjectData.map((project) => (
         <Project
@@ -30,7 +33,7 @@ const MyWork = () => {
           screenshot={screenshots[project.title]}
         />
       ))}
-    </div>
+    </motion.div>
   );
 };
 
