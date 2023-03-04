@@ -16,8 +16,27 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // handle form submission here
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...formData,
+      }),
+    })
+      .then(() => {
+        console.log("Form submitted successfully");
+        // Do something to show a success message or redirect to a success page
+      })
+      .catch((error) => alert(error));
   };
+  
+  function encode(data) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
 
   return (
     <ContactFormStyled
@@ -27,7 +46,10 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       method="POST"
       netlify
+      data-netlify="true"
       action="/success"
+      name="contact"
+
     >
       <input type="hidden" name="form-name" value="contact" />
       <Label htmlFor="name">Name:</Label>
