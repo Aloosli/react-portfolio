@@ -5,7 +5,7 @@ import styled from "styled-components";
 import emailIcon from "../icons/email.svg";
 import githubIcon from "../icons/github.svg";
 import linkedinIcon from "../icons/linkedin.svg";
-import ContactForm from "../components/ContactForm";
+import ContactForm from "./ContactForm";
 
 const ContactMe = () => {
   const [showForm, setShowForm] = useState(false);
@@ -82,4 +82,3 @@ const Socials = styled.a`
 `;
 
 export default ContactMe;
-

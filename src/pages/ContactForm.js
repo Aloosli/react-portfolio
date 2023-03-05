@@ -19,6 +19,7 @@ const ContactForm = () => {
     const form = e.target;
     fetch("/", {
       method: "POST",
+
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
@@ -27,14 +28,15 @@ const ContactForm = () => {
     })
       .then(() => {
         console.log("Form submitted successfully");
-        // Do something to show a success message or redirect to a success page
       })
       .catch((error) => alert(error));
   };
-  
+
   function encode(data) {
     return Object.keys(data)
-      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
       .join("&");
   }
 
@@ -44,12 +46,10 @@ const ContactForm = () => {
       initial="hidden"
       animate="show"
       onSubmit={handleSubmit}
-      method="POST"
-      netlify
-      data-netlify="true"
-      action="/success"
       name="contact"
-
+      method="post"
+      data-netlify="true"
+      action="thank-you"
     >
       <input type="hidden" name="form-name" value="contact" />
       <Label htmlFor="name">Name:</Label>
