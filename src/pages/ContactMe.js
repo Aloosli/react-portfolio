@@ -5,7 +5,8 @@ import styled from "styled-components";
 import emailIcon from "../icons/email.svg";
 import githubIcon from "../icons/github.svg";
 import linkedinIcon from "../icons/linkedin.svg";
-import ContactForm from "./ContactForm";
+import ContactForm from "../components/ContactForm";
+import cvIcon from "../icons/cv.svg";
 
 const ContactMe = () => {
   const [showForm, setShowForm] = useState(false);
@@ -35,6 +36,9 @@ const ContactMe = () => {
           <img src={githubIcon} alt="github" />
           <h3>Visit my GitHub</h3>
         </Socials>
+        {!showForm && (
+          <ResumeIcon href="/PDF/cv.pdf" target="_blank" rel="noopener noreferrer" />
+        )}
       </div>
       {showForm && <ContactForm />}
     </ContactStyled>
@@ -51,7 +55,6 @@ const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-bottom: 1.5rem;
 `;
 
@@ -81,4 +84,17 @@ const Socials = styled.a`
   }
 `;
 
+const ResumeIcon = styled.a`
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 5rem;
+  height: 5rem;
+  background-image: url(${cvIcon});
+  background-size: cover;
+  cursor: pointer;
+`;
+
 export default ContactMe;
+

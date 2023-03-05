@@ -59,7 +59,7 @@ const Services = styled(About)`
   }
   p {
     width: 100%;
-    padding: 1rem 0rem 2rem 0rem;
+    
   }
   span {
     color: #e9c46a;
@@ -67,12 +67,14 @@ const Services = styled(About)`
 `;
 const Cards = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  
 `;
 const Card = styled.div`
-  flex-basis: 20rem;
+  flex-basis: 10rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   h2 {
       font-size: 1.5rem;

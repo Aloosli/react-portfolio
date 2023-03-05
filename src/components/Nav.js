@@ -33,21 +33,23 @@ const StyledNav = styled.nav`
   align-items: center;
   padding: 0.5rem 1.7rem;
   a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #e76f51;
     text-decoration: none;
   }
   ul {
     display: flex;
     list-style: none;
+    margin-right  1.7rem;
   }
   li {
     font-family: "Montserrat", sans-serif;
-    padding-left: 2rem;
+    padding-left: 1.7rem;
     position: relative;
   }
   #logo img {
     width: 50%;
+    min-width: 25px;
   }
   border-bottom: 4px solid #4c88a7;
 `;
