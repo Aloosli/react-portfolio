@@ -56,6 +56,19 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.2rem;
         line-height: 150%;
         
-    }`;
+    }
+    @media screen and (min-width: 768px) {
+    
+        h2 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.5rem;
+    
+    
+        }
+    }
+`;
+
 
 export default GlobalStyle;

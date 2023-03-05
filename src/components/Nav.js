@@ -33,17 +33,18 @@ const StyledNav = styled.nav`
   align-items: center;
   padding: 0.5rem 1.7rem;
   a {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #e76f51;
     text-decoration: none;
   }
   ul {
     display: flex;
     list-style: none;
-    margin-right  1.7rem;
+    margin-right:  1.7rem;
   }
   li {
     font-family: "Montserrat", sans-serif;
+    font-style: bold;
     padding-left: 1.7rem;
     position: relative;
   }

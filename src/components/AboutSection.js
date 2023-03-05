@@ -34,12 +34,13 @@ const AboutSection = () => {
         <motion.button variants={fade}>
           <Link to="/ContactMe" className="btn-contact">Contact Me</Link>
         </motion.button>
-        <Image>
-          <motion.img variants={photoAnim} src={avatar} alt="avatar" />
-        </Image>
       </Description>
+      <Image>
+        <motion.img variants={photoAnim} src={avatar} alt="avatar" />
+      </Image>
     </About>
   );
 };
+
 
 export default AboutSection;
