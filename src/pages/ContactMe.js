@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { pageAnimations, titleAnim } from "../animations";
 import styled from "styled-components";
+import { NavLinks } from "../Styles";
 import emailIcon from "../icons/email.svg";
 import githubIcon from "../icons/github.svg";
 import linkedinIcon from "../icons/linkedin.svg";
@@ -46,16 +47,31 @@ const ContactMe = () => {
 };
 
 const ContactStyled = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   padding: 1.2rem 3rem;
   color: #e76f51;
   min-height: 90vh;
+
+
 `;
 
 const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin: 2rem 2rem;
+  @media screen and (min-width: 768px) {
+
+    margin: 3rem;
+}
+
+@media screen and (min-width: 500px) {
+
+margin: 3rem;
+}
 `;
 
 const Hide = styled.div`
@@ -67,7 +83,8 @@ const Socials = styled.a`
   align-items: center;
   text-decoration: none;
   color: #e76f51;
-  margin-bottom: 2rem;
+  
+  margin-bottom: 2rem; 
 
   img {
     width: 2.5rem;
@@ -80,8 +97,15 @@ const Socials = styled.a`
   }
 
   h3 {
+    font-size: 1.2rem;
     color: #4c88a7;
   }
+
+  @media screen and (min-width: 768px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
 `;
 
 const ResumeIcon = styled.a`
@@ -89,12 +113,15 @@ const ResumeIcon = styled.a`
   top: 80%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  margin-top: 2rem;
   width: 5rem;
   height: 5rem;
   background-image: url(${cvIcon});
   background-size: cover;
   cursor: pointer;
 `;
+
+
 
 export default ContactMe;
 

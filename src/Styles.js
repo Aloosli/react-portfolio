@@ -38,6 +38,12 @@ export const Description = styled.div`
     
     padding-left: 8rem;
   }
+
+  @media screen and (min-width: 1920px) {
+    /* Adjust spacing on larger screens */
+    
+    padding-left: 15rem;
+  }
 `;
 
 export const Image = styled.div`
@@ -52,16 +58,29 @@ export const Image = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    /* Adjust margin-top on larger screens */
-    margin-top: 0;
+    
+   
     img {
       width: 50%;
       margin-left: 10rem;
     }
   }
+
+  @media screen and (min-width: 1920px) {
+    
+    
+    img {
+      width: 50%;
+      margin-left: 20rem;
+    }
+  }
 `;
+
+
 
 export const Hide = styled.div`
   overflow: hidden;
 `;
+
+
 

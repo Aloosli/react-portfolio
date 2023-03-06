@@ -3,12 +3,15 @@ import { useState } from "react";
 import { formAnimations } from "../animations";
 import styled from "styled-components";
 
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -28,8 +31,13 @@ const ContactForm = () => {
     })
       .then(() => {
         console.log("Form submitted successfully");
+        setShowSuccessMessage(true);
       })
       .catch((error) => alert(error));
+  };
+
+  const handleCloseSuccessMessage = () => {
+    setShowSuccessMessage(false);
   };
 
   function encode(data) {
@@ -41,28 +49,36 @@ const ContactForm = () => {
   }
 
   return (
-    <ContactFormStyled
-      variants={formAnimations}
-      initial="hidden"
-      animate="show"
-      onSubmit={handleSubmit}
-      name="contact"
-      method="post"
-      data-netlify="true"
-      action="thank-you"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      <Label htmlFor="name">Name:</Label>
-      <Input type="text" name="name" id="name" onChange={handleChange} />
+    <>
+      {showSuccessMessage ? (
+        <SuccessMessage onClick={handleCloseSuccessMessage}>
+          Thank you for your message! We will get back to you soon.
+        </SuccessMessage>
+      ) : (
+        <ContactFormStyled
+          variants={formAnimations}
+          initial="hidden"
+          animate="show"
+          onSubmit={handleSubmit}
+          name="contact"
+          method="post"
+          data-netlify="true"
+          action="thank-you"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <Label htmlFor="name">Name:</Label>
+          <Input type="text" name="name" id="name" onChange={handleChange} />
 
-      <Label htmlFor="email">Email:</Label>
-      <Input type="email" name="email" id="email" onChange={handleChange} />
+          <Label htmlFor="email">Email:</Label>
+          <Input type="email" name="email" id="email" onChange={handleChange} />
 
-      <Label htmlFor="message">Message:</Label>
-      <Textarea name="message" id="message" onChange={handleChange} />
+          <Label htmlFor="message">Message:</Label>
+          <Textarea name="message" id="message" onChange={handleChange} />
 
-      <Button type="submit">Send</Button>
-    </ContactFormStyled>
+          <Button type="submit">Send</Button>
+        </ContactFormStyled>
+      )}
+    </>
   );
 };
 
@@ -71,6 +87,19 @@ const ContactFormStyled = styled(motion.form)`
   flex-direction: column;
   max-width: 70%;
   margin: 0 auto;
+`;
+
+const SuccessMessage = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 50%;
+  border-radius: 10rem;
+  background-color: #4c88a7;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
 `;
 
 const Label = styled.label`
