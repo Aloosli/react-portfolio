@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { pageAnimations, titleAnim } from "../animations";
 import styled from "styled-components";
-import { NavLinks } from "../Styles";
+
 import emailIcon from "../icons/email.svg";
 import githubIcon from "../icons/github.svg";
 import linkedinIcon from "../icons/linkedin.svg";
@@ -38,7 +38,11 @@ const ContactMe = () => {
           <h3>Visit my GitHub</h3>
         </Socials>
         {!showForm && (
-          <ResumeIcon href="/PDF/cv.pdf" target="_blank" rel="noopener noreferrer" />
+          <ResumeIcon
+            href="/PDF/cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          />
         )}
       </div>
       {showForm && <ContactForm />}
@@ -50,12 +54,10 @@ const ContactStyled = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   padding: 1.2rem 3rem;
   color: #e76f51;
   min-height: 90vh;
-
-
 `;
 
 const Title = styled.div`
@@ -64,14 +66,12 @@ const Title = styled.div`
   justify-content: center;
   margin: 2rem 2rem;
   @media screen and (min-width: 768px) {
-
     margin: 3rem;
-}
+  }
 
-@media screen and (min-width: 500px) {
-
-margin: 3rem;
-}
+  @media screen and (min-width: 500px) {
+    margin: 3rem;
+  }
 `;
 
 const Hide = styled.div`
@@ -83,8 +83,8 @@ const Socials = styled.a`
   align-items: center;
   text-decoration: none;
   color: #e76f51;
-  
-  margin-bottom: 2rem; 
+
+  margin-bottom: 2rem;
 
   img {
     width: 2.5rem;
@@ -102,10 +102,10 @@ const Socials = styled.a`
   }
 
   @media screen and (min-width: 768px) {
-  h3 {
-    font-size: 2rem;
+    h3 {
+      font-size: 2rem;
+    }
   }
-}
 `;
 
 const ResumeIcon = styled.a`
@@ -121,7 +121,4 @@ const ResumeIcon = styled.a`
   cursor: pointer;
 `;
 
-
-
 export default ContactMe;
-
