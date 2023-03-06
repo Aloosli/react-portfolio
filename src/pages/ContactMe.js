@@ -57,7 +57,7 @@ const ContactStyled = styled(motion.div)`
 
   padding: 1.2rem 3rem;
   color: #e76f51;
-  min-height: 90vh;
+  min-height: 80vh;
 `;
 
 const Title = styled.div`
@@ -102,6 +102,7 @@ const Socials = styled.a`
   }
 
   @media screen and (min-width: 768px) {
+    
     h3 {
       font-size: 2rem;
     }
@@ -110,7 +111,7 @@ const Socials = styled.a`
 
 const ResumeIcon = styled.a`
   position: absolute;
-  top: 80%;
+  top:70%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   margin-top: 2rem;

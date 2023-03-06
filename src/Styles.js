@@ -10,7 +10,7 @@ export const About = styled.div`
   color: white;
 
   @media screen and (min-width: 768px) {
-    
+    min-height: 100vh;
     flex-direction: row;
     justify-content: center;
     
@@ -35,7 +35,9 @@ export const Description = styled.div`
 
   @media screen and (min-width: 768px) {
     /* Adjust spacing on larger screens */
-    
+    h2 {
+      font-size: 3rem;
+    }
     padding-left: 8rem;
   }
 

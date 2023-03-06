@@ -36,10 +36,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: "montserrat", sans-serif;
         color: white;
     }
-    h4 {
-        font-weight: bold;
-        color: #2a9d8f;
-    }
+   
     span {
         font-weight: bold;
         
