@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { About, Description } from "../Styles";
 import { motion } from "framer-motion";
 import { pageAnimations } from "../animations";
+import {} from "../animations";
 
 // Import icons
 import htmlIcon from "../icons/html.svg";
@@ -53,10 +54,10 @@ const Skills = () => {
 const SkillsSection = styled(About)`
   color: #e9c46a;
   padding: 0;
-  display: flex;
 `;
 
 const Cards = styled.div`
+  display: flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;

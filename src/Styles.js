@@ -46,7 +46,7 @@ export const Description = styled.div`
     h2 {
       font-size: 3rem;
     }
-    padding-left: 15rem;
+    
   }
 `;
 
