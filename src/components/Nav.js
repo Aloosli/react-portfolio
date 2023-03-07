@@ -123,12 +123,13 @@ const LinksWrapper = styled.div`
     top: 0;
     right: 0;
     height: 100vh;
-    width: 50%;
-    background-color: rgba(244, 162, 97, 0.8);
+    width: 40%;
+    background-color: #e76f51;
     
     a {
+      margin-left: 1rem;
       color: #264653;
-      font-size: 1.9rem;
+      font-size: 1.7rem;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     z-index: 1;

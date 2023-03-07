@@ -14,43 +14,46 @@ import nodeIcon from "../icons/nodejs.svg";
 const Skills = () => {
   return (
     <SkillsSection>
-      <motion.div exit='exit' variants={pageAnimations} initial="hidden"animate="show">
-      <Description>
-        <h2>Skills</h2>
-        <Cards>
-          <Card>
-            <img src={htmlIcon} alt="html icon" />
-            <h3>HTML5</h3>
-          </Card>
-          <Card>
-            <img src={cssIcon} alt="css icon" />
-            <h3>CSS3</h3>
-          </Card>
-          <Card>
-            <img src={jsIcon} alt="javascript icon" />
-            <h3>JavaScript</h3>
-          </Card>
-          <Card>
-            <img src={reactIcon} alt="react icon" />
-            <h3>React</h3>
-          </Card>
-          <Card>
-            <img src={nodeIcon} alt="nodejs icon" />
-            <h3>Node.js</h3>
-          </Card>
-        </Cards>
-      </Description>
-    </motion.div>
+      <motion.div
+        exit="exit"
+        variants={pageAnimations}
+        initial="hidden"
+        animate="show"
+      >
+        <Description>
+          <h2>Skills</h2>
+          <Cards>
+            <Card>
+              <img src={htmlIcon} alt="html icon" />
+              <h3>HTML5</h3>
+            </Card>
+            <Card>
+              <img src={cssIcon} alt="css icon" />
+              <h3>CSS3</h3>
+            </Card>
+            <Card>
+              <img src={jsIcon} alt="javascript icon" />
+              <h3>JavaScript</h3>
+            </Card>
+            <Card>
+              <img src={reactIcon} alt="react icon" />
+              <h3>React</h3>
+            </Card>
+            <Card>
+              <img src={nodeIcon} alt="nodejs icon" />
+              <h3>Node.js</h3>
+            </Card>
+          </Cards>
+        </Description>
+      </motion.div>
     </SkillsSection>
-    
   );
 };
 
 const SkillsSection = styled(About)`
   color: #e9c46a;
-  text-align: center;
+  padding: 0;
   display: flex;
-  
 `;
 
 const Cards = styled.div`
@@ -67,8 +70,8 @@ const Card = styled.div`
   justify-content: center;
   margin: 1rem;
   padding: 1rem;
-  width: 15rem;
-  height: 15rem;
+  width: 14rem;
+  height: 14rem;
   background-color: #264653;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
