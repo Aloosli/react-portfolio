@@ -36,22 +36,24 @@ export const Description = styled.div`
   @media screen and (min-width: 768px) {
     /* Adjust spacing on larger screens */
     h2 {
-      font-size: 3rem;
+      font-size: 2.3rem;
     }
-    padding-left: 8rem;
+    padding-left: 6rem;
   }
 
   @media screen and (min-width: 1920px) {
     /* Adjust spacing on larger screens */
-    
+    h2 {
+      font-size: 3rem;
+    }
     padding-left: 15rem;
   }
 `;
 
 export const Image = styled.div`
   display: flex;
-  width: 70%;
-  
+  width: 50%;
+  height: auto;
 
   img {
     width: 100%;
@@ -60,19 +62,19 @@ export const Image = styled.div`
   }
 
   @media screen and (min-width: 768px) {
+    width: 100%;
     
-   
     img {
-      width: 50%;
-      margin-left: 10rem;
+      width: 100%;
+      margin-left: 4rem;
     }
   }
 
-  @media screen and (min-width: 1920px) {
-    
-    
+  @media screen and (min-width: 1280px) {
+    width: 50%;
+
     img {
-      width: 50%;
+      width: 100%;
       margin-left: 20rem;
     }
   }

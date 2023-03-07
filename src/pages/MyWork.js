@@ -49,7 +49,7 @@ const ProjectWrapper = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     grid-template-columns: 1fr;
     
   }
