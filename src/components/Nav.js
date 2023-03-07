@@ -28,6 +28,11 @@ const Nav = () => {
           </NavLink>
         </LinkWrapper>
         <LinkWrapper>
+          <NavLink to="/Skills" onClick={() => setIsOpen(false)}>
+            Skills
+          </NavLink>
+        </LinkWrapper>
+        <LinkWrapper>
           <NavLink to="/MyWork" onClick={() => setIsOpen(false)}>
             Work
           </NavLink>

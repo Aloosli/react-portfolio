@@ -5,6 +5,7 @@ import GlobalStyle from "./components/GlobalStyle";
 import AboutMe from "./pages/AboutMe";
 import ContactMe from "./pages/ContactMe";
 import MyWork from "./pages/MyWork";
+import Skills from "./pages/Skills";
 import Nav from "./components/Nav";
 
 // Router
@@ -21,8 +22,10 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<AboutMe />} />
           <Route path="/AboutMe" element={<AboutMe />} />
+          <Route path="/Skills" element={<Skills />} />
           <Route path="/MyWork" element={<MyWork />} />
           <Route path="/ContactMe" element={<ContactMe />} />
+
         </Routes>
       </AnimatePresence>
     </div>
