@@ -52,7 +52,7 @@ const ContactForm = () => {
     <>
       {showSuccessMessage ? (
         <SuccessMessage onClick={handleCloseSuccessMessage}>
-          Thank you for your message! We will get back to you soon.
+          Thank you for your message!
         </SuccessMessage>
       ) : (
         <ContactFormStyled
@@ -91,14 +91,17 @@ const ContactFormStyled = styled(motion.form)`
 
 const SuccessMessage = styled.div`
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  height: 6rem;
-  width: 50%;
+  height: 4rem;
+  width: 80%;
   border-radius: 10rem;
   background-color: #4c88a7;
-  color: white;
+  color: #e76f51;
   font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
   cursor: pointer;
 `;
 
