@@ -2,24 +2,24 @@ export const pageAnimations = {
     hidden: {
       opacity: 0,
       y: 300,
-      scale: 0,
+      scale: 0.5,
     },
     show: {
       opacity: 1,
       y: 0,
       scale: 1,
       transition: {
-        duration: 0.75,
-        ease: "easeOut",
+        duration: 0.55,
+        
         staggerChildren: 0.2,
       },
     },
     exit: {
       opacity: 0,
       y: 300,
-      scale: 0,
+      scale: 0.5,
       transition: {
-        duration: 0.5,
+        duration: 0.75,
       },
     },
   };
